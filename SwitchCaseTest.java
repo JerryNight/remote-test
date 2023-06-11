@@ -1,43 +1,43 @@
 /*
-·ÖÖ§½á¹¹Ö®switch-caseµÄÊ¹ÓÃ
+åˆ†æ”¯ç»“æ„ä¹‹switch-caseçš„ä½¿ç”¨
 
-1. Óï·¨¸ñÊ½
+1. è¯­æ³•æ ¼å¼
 
-switch(±í´ïÊ½){
+switch(è¡¨è¾¾å¼){
 	
-	case ³£Á¿1:
-		//Ö´ĞĞÓï¾ä1
+	case å¸¸é‡1:
+		//æ‰§è¡Œè¯­å¥1
 		//break;
-	case ³£Á¿2:
-		//Ö´ĞĞÓï¾ä2
+	case å¸¸é‡2:
+		//æ‰§è¡Œè¯­å¥2
 		//break;
 	...
 	default:
-		//Ö´ĞĞÓï¾ä2
+		//æ‰§è¡Œè¯­å¥2
 		//break;
 }
 
-2.Ö´ĞĞ¹ı³Ì£º
-¸ù¾İ±í´ïÊ½ÖĞµÄÖµ£¬ÒÀ´ÎÆ¥ÅäcaseÓï¾ä¡£Ò»µ©ÓëÄ³Ò»¸öcaseÖĞµÄ³£Á¿ÏàµÈ£¬ÄÇÃ´¾ÍÖ´ĞĞ´ËcaseÖĞµÄÖ´ĞĞÓï¾ä¡£
-Ö´ĞĞÍê´ËÖ´ĞĞÓï¾äÖ®ºó£¬
-		Çé¿ö1£ºÓöµ½break£¬ÔòÖ´ĞĞbreakºó£¬Ìø³öµ±Ç°µÄswitch-case½á¹¹
-		Çé¿ö2£ºÃ»ÓĞÓöµ½break£¬Ôò¼ÌĞøÖ´ĞĞÆäºóµÄcaseÖĞµÄÖ´ĞĞÓï¾ä¡£ ---> case ´©Í¸
+2.æ‰§è¡Œè¿‡ç¨‹ï¼š
+æ ¹æ®è¡¨è¾¾å¼ä¸­çš„å€¼ï¼Œä¾æ¬¡åŒ¹é…caseè¯­å¥ã€‚ä¸€æ—¦ä¸æŸä¸€ä¸ªcaseä¸­çš„å¸¸é‡ç›¸ç­‰ï¼Œé‚£ä¹ˆå°±æ‰§è¡Œæ­¤caseä¸­çš„æ‰§è¡Œè¯­å¥ã€‚
+æ‰§è¡Œå®Œæ­¤æ‰§è¡Œè¯­å¥ä¹‹åï¼Œ
+		æƒ…å†µ1ï¼šé‡åˆ°breakï¼Œåˆ™æ‰§è¡Œbreakåï¼Œè·³å‡ºå½“å‰çš„switch-caseç»“æ„
+		æƒ…å†µ2ï¼šæ²¡æœ‰é‡åˆ°breakï¼Œåˆ™ç»§ç»­æ‰§è¡Œå…¶åçš„caseä¸­çš„æ‰§è¡Œè¯­å¥ã€‚ ---> case ç©¿é€
 				...
-			   Ö±µ½Óöµ½break»òÕßÖ´ĞĞÍêËùÓĞµÄcase¼°defaultÖĞµÄÓï¾ä£¬ÍË³öµ±Ç°µÄswitch-case½á¹¹
+			   ç›´åˆ°é‡åˆ°breakæˆ–è€…æ‰§è¡Œå®Œæ‰€æœ‰çš„caseåŠdefaultä¸­çš„è¯­å¥ï¼Œé€€å‡ºå½“å‰çš„switch-caseç»“æ„
 
-3. ËµÃ÷£º
-¢Ù switchÖĞµÄ±í´ïÊ½Ö»ÄÜÊÇÌØ¶¨µÄÊı¾İÀàĞÍ¡£ÈçÏÂ£ºbyte \ short \ char \ int \ Ã¶¾Ù(JDK5.0ĞÂÔö) \ String(JDK7.0ĞÂÔö)
-¢Ú case ºó¶¼ÊÇ¸úµÄ³£Á¿£¬Ê¹ÓÃ±í´ïÊ½ÓëÕâĞ©³£Á¿×öÏàµÈµÄÅĞ¶Ï£¬²»ÄÜ½øĞĞ·¶Î§µÄÅĞ¶Ï¡£
-¢Û ¿ª·¢ÖĞ£¬Ê¹ÓÃswitch-caseÊ±£¬Í¨³£caseÆ¥ÅäµÄÇé¿ö¶¼ÓĞÏŞ¡£
-¢Ü break:¿ÉÒÔÊ¹ÓÃÔÚswitch-caseÖĞ¡£Ò»µ©Ö´ĞĞ´Ëbreak¹Ø¼ü×Ö£¬¾ÍÌø³öµ±Ç°µÄswitch-case½á¹¹
-¢İ default£ºÀàËÆÓÚif-elseÖĞµÄelse½á¹¹¡£
-           defaultÊÇ¿ÉÑ¡µÄ£¬¶øÇÒÎ»ÖÃÊÇÁé»îµÄ¡£
+3. è¯´æ˜ï¼š
+â‘  switchä¸­çš„è¡¨è¾¾å¼åªèƒ½æ˜¯ç‰¹å®šçš„æ•°æ®ç±»å‹ã€‚å¦‚ä¸‹ï¼šbyte \ short \ char \ int \ æšä¸¾(JDK5.0æ–°å¢) \ String(JDK7.0æ–°å¢)
+â‘¡ case åéƒ½æ˜¯è·Ÿçš„å¸¸é‡ï¼Œä½¿ç”¨è¡¨è¾¾å¼ä¸è¿™äº›å¸¸é‡åšç›¸ç­‰çš„åˆ¤æ–­ï¼Œä¸èƒ½è¿›è¡ŒèŒƒå›´çš„åˆ¤æ–­ã€‚
+â‘¢ å¼€å‘ä¸­ï¼Œä½¿ç”¨switch-caseæ—¶ï¼Œé€šå¸¸caseåŒ¹é…çš„æƒ…å†µéƒ½æœ‰é™ã€‚
+â‘£ break:å¯ä»¥ä½¿ç”¨åœ¨switch-caseä¸­ã€‚ä¸€æ—¦æ‰§è¡Œæ­¤breakå…³é”®å­—ï¼Œå°±è·³å‡ºå½“å‰çš„switch-caseç»“æ„
+â‘¤ defaultï¼šç±»ä¼¼äºif-elseä¸­çš„elseç»“æ„ã€‚
+           defaultæ˜¯å¯é€‰çš„ï¼Œè€Œä¸”ä½ç½®æ˜¯çµæ´»çš„ã€‚
 
-4. switch-case Óëif-elseÖ®¼äµÄ×ª»»
-¢Ù ¿ª·¢ÖĞ·²ÊÇ¿ÉÒÔÊ¹ÓÃswitch-case½á¹¹µÄ³¡¾°£¬¶¼¿ÉÒÔ¸ÄĞ´Îªif-else¡£·´Ö®£¬²»³ÉÁ¢
-¢Ú ¿ª·¢ÖĞ£¬Èç¹ûÒ»¸ö¾ßÌåÎÊÌâ¼È¿ÉÒÔÊ¹ÓÃswitch-case£¬ÓÖ¿ÉÒÔÊ¹ÓÃif-elseµÄÊ±ºò£¬ÍÆ¼öÊ¹ÓÃswitch-case¡£
-  ÎªÊ²Ã´£¿switch-caseÏà½ÏÓÚif-elseĞ§ÂÊÉÔ¸ß¡£
-
+4. switch-case ä¸if-elseä¹‹é—´çš„è½¬æ¢
+â‘  å¼€å‘ä¸­å‡¡æ˜¯å¯ä»¥ä½¿ç”¨switch-caseç»“æ„çš„åœºæ™¯ï¼Œéƒ½å¯ä»¥æ”¹å†™ä¸ºif-elseã€‚åä¹‹ï¼Œä¸æˆç«‹
+â‘¡ å¼€å‘ä¸­ï¼Œå¦‚æœä¸€ä¸ªå…·ä½“é—®é¢˜æ—¢å¯ä»¥ä½¿ç”¨switch-caseï¼Œåˆå¯ä»¥ä½¿ç”¨if-elseçš„æ—¶å€™ï¼Œæ¨èä½¿ç”¨switch-caseã€‚
+  ä¸ºä»€ä¹ˆï¼Ÿswitch-caseç›¸è¾ƒäºif-elseæ•ˆç‡ç¨é«˜ã€‚
+â‘¢ ä½¿ç”¨switch-caseçš„åœºæ™¯æ¯”è¾ƒå°‘
 */
 class SwitchCaseTest{
 	public static void main(String[] args){
@@ -50,7 +50,7 @@ class SwitchCaseTest{
 				break; 
 			case 1:
 				System.out.println("one");
-				break; //½áÊøµ±Ç°µÄswitch-case½á¹¹
+				break; //ç»“æŸå½“å‰çš„switch-caseç»“æ„
 			case 2:
 				System.out.println("two");
 				break; 
@@ -62,39 +62,39 @@ class SwitchCaseTest{
 				//break; 
 		}
 
-		//ÁíÀı£º
+		//å¦ä¾‹ï¼š
 		String season = "summer";
         switch (season) {
             case "spring":
-                System.out.println("´ºÅ¯»¨¿ª");
+                System.out.println("æ˜¥æš–èŠ±å¼€");
                 break;
             case "summer":
-                System.out.println("ÏÄÈÕÑ×Ñ×");
+                System.out.println("å¤æ—¥ç‚ç‚");
                 break;
             case "autumn":
-                System.out.println("Çï¸ßÆøË¬");
+                System.out.println("ç§‹é«˜æ°”çˆ½");
                 break;
             case "winter":
-                System.out.println("¶¬Ñ©°¨°¨");
+                System.out.println("å†¬é›ªçš‘çš‘");
                 break;
             /*default:
-                System.out.println("¼¾½ÚÊäÈëÓĞÎó");
+                System.out.println("å­£èŠ‚è¾“å…¥æœ‰è¯¯");
                 break;
 			*/
         }
 
-		//´íÎóµÄÀı×Ó£º±àÒë²»Í¨¹ı
+		//é”™è¯¯çš„ä¾‹å­ï¼šç¼–è¯‘ä¸é€šè¿‡
 		/*
 		int number = 20;
 		switch(number){
 			case number > 0:
-				System.out.println("ÕıÊı");
+				System.out.println("æ­£æ•°");
                 break;
 			case number < 0:
-				System.out.println("¸ºÊı");
+				System.out.println("è´Ÿæ•°");
                 break;
 			default:
-				System.out.println("Áã");
+				System.out.println("é›¶");
                 break;
 		}
 		*/
